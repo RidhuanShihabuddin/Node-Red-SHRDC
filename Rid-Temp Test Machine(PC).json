@@ -1,0 +1,2116 @@
+[
+    {
+        "id": "301924d813137793",
+        "type": "tab",
+        "label": "Last Day",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "839794e7dfaeafcf",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "fe0a6ad5737ca491",
+            "2b9403677b9260b6",
+            "0108e39089ffc1c3",
+            "1609146e147566c4",
+            "2ee3f70ddddbf5e3"
+        ],
+        "x": 914,
+        "y": 119,
+        "w": 612,
+        "h": 162
+    },
+    {
+        "id": "e4c6ec645eb396d4",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "fe3678fc252d04fb",
+            "cac196adb4ed426d",
+            "8baa619a6f50545b",
+            "b44710b1888fb05c"
+        ],
+        "x": 1894,
+        "y": 979,
+        "w": 372,
+        "h": 202
+    },
+    {
+        "id": "f4b07e40a897d4c3",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a2a993b819194bdb",
+            "df5635b283f3b3e1",
+            "bb2f89929934201b",
+            "6c6aacec9e6de8b1",
+            "13c082e7ba4d2418",
+            "6caef5397b21ef52",
+            "95260754dfbb48f7",
+            "7c76e8262aee569b",
+            "06bc2b123319edfb",
+            "da8de5822b8033d8",
+            "de24ba5a814eb5fa",
+            "4268e1b9097bdfbe",
+            "f48242f7d4b2594b",
+            "04f38947588de664",
+            "372e247188769793",
+            "0881021747333e3d",
+            "5b389245c550dfce"
+        ],
+        "x": 914,
+        "y": 559,
+        "w": 722,
+        "h": 462
+    },
+    {
+        "id": "de24ba5a814eb5fa",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "func": "var onoff = global.get(\"y\");\nvar interval = global.get(\"ir\");\n\nif (onoff == 1){\n    \n    msg.payload = interval\n    \n}\n\nelse{\n    return null\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"ir\",msg.payload)\n",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf092bf45cf89faa",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7c8cf334c24327e6",
+            "991716f8df5974d2",
+            "4b3d7c8664568e3b"
+        ],
+        "x": 914,
+        "y": 319,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "d0e6b874e0f8a024",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "31d3e2d425911726",
+            "7c4fd90e286a1794",
+            "0bc8883422be6cbd",
+            "204daf756b3489df",
+            "0c44186447dfd532",
+            "6b7a749aee8ad1c3",
+            "655f7f3d9d6b0bde",
+            "760f636c8ded7d0d",
+            "0a654e48294f11e9",
+            "76f0b465256a9899",
+            "27f7633ecac01096",
+            "bfb21c4af620e466",
+            "0cc6fe4467718eee"
+        ],
+        "x": 904,
+        "y": 1239,
+        "w": 722,
+        "h": 382
+    },
+    {
+        "id": "edba4f3c8ddaae1d",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1d7adb8e52cfb2b8",
+            "4d449cef16c0f79c",
+            "4d5e563f974f7dd8",
+            "1f21d56054f499fa",
+            "55c4ad5fb1b0f15f",
+            "a07374685218f414",
+            "2e91f4224cfc27d0",
+            "73e936d7b4dd1663",
+            "45c0c71a8363e571",
+            "59363e2228e8f13c",
+            "0a91fd8d5d6ea8d3",
+            "e5799f998458ebb2",
+            "1fbc33a86294dc12"
+        ],
+        "x": 904,
+        "y": 1799,
+        "w": 682,
+        "h": 362
+    },
+    {
+        "id": "7f118db8b5466e8f",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "eb4161b560088605",
+            "353f311bd11b8354",
+            "b62be88232b49c21"
+        ],
+        "x": 194,
+        "y": 139,
+        "w": 252,
+        "h": 122
+    },
+    {
+        "id": "353f311bd11b8354",
+        "type": "ui_text_input",
+        "z": "301924d813137793",
+        "g": "7f118db8b5466e8f",
+        "name": "",
+        "label": "Name ",
+        "tooltip": "",
+        "group": "f09b3eb508ab3059",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 310,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f09b3eb508ab3059",
+        "type": "ui_group",
+        "name": "OPERATOR LOGIN",
+        "tab": "f36720248c889c66",
+        "order": 4,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f36720248c889c66",
+        "type": "ui_tab",
+        "name": "Temperature Test Machine",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8f3c409cc96bbc06",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d280c227b83d558e",
+            "cadaeca50a9d7f24"
+        ],
+        "x": 194,
+        "y": 419,
+        "w": 272,
+        "h": 122
+    },
+    {
+        "id": "f6b491decc911f27",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1562996397f9553b",
+            "547283a4849ebbc3"
+        ],
+        "x": 174,
+        "y": 1139,
+        "w": 312,
+        "h": 122
+    },
+    {
+        "id": "b58ddb4f154b702b",
+        "type": "group",
+        "z": "301924d813137793",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "551965d72523c38a",
+            "17d9da0ccab24931"
+        ],
+        "x": 174,
+        "y": 1699,
+        "w": 292,
+        "h": 122
+    },
+    {
+        "id": "d280c227b83d558e",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "8f3c409cc96bbc06",
+        "name": "Red Tower Light",
+        "info": "",
+        "x": 300,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cadaeca50a9d7f24",
+        "type": "mqtt in",
+        "z": "301924d813137793",
+        "g": "8f3c409cc96bbc06",
+        "name": "",
+        "topic": "RED TL TEMP. MACHINE",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b9f1f33723b004cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "92a6b99c074f656b",
+                "4021ee2d74ce4189",
+                "87b7092c10b374b9"
+            ]
+        ]
+    },
+    {
+        "id": "92a6b99c074f656b",
+        "type": "ui_led",
+        "z": "301924d813137793",
+        "order": 6,
+        "group": "fa9326ecab2ebb07",
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#ffffff",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "RED TL",
+        "x": 1660,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "4021ee2d74ce4189",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "event timestamp",
+        "func": "var onoff = msg.payload; // 1/0 signal\nvar nd = new Date();     // Generate time stamp\nvar dts = nd.toString(); // Parse in string\nvar TL = \"Red Tower Light\" ;\nvar name = global.get(\"a\");\n\nmsg.payload = {\n   Status: onoff,\n    DateTime: dts,\n    TowerLight: TL,\n    Operator: name\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 580,
+        "wires": [
+            [
+                "13c082e7ba4d2418",
+                "a9307aaf345744c1",
+                "a2a993b819194bdb",
+                "7c76e8262aee569b",
+                "4268e1b9097bdfbe",
+                "372e247188769793"
+            ]
+        ]
+    },
+    {
+        "id": "a9307aaf345744c1",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "-",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1060,
+        "wires": [
+            [
+                "cac196adb4ed426d"
+            ]
+        ]
+    },
+    {
+        "id": "fe0a6ad5737ca491",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "839794e7dfaeafcf",
+        "name": "email to line engineer",
+        "func": "var onoff = global.get(\"red\");  // 1 or 0\nvar name = global.get(\"a\");\n\nif (onoff == 1){\n    \n    var new_date = new Date(); //generate 13 digit date\n    var dts = new_date.toString(); // convert to readable date\n    \n    // ---Email Title---\n    msg.topic = \"TAKE NOTE! (SYARIKAT SHRDC) Temperature Machine Downed\";\n    \n    // ---Email content---\n    msg.payload = \"The (SYARIKAT SHRDC) TEMPERATURE TEST MACHINE was stopped at (timestamp).\" + \"\\n\\n\\r\" +\n                  \"Please log the cause and action taken by the line technician Mr\\Ms. \"+ name + \" into the Production Event Logging System\"\n                  ;\n}\nelse{\n    return null; // if not using switch node\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 200,
+        "wires": [
+            [
+                "2b9403677b9260b6"
+            ]
+        ]
+    },
+    {
+        "id": "2b9403677b9260b6",
+        "type": "e-mail",
+        "z": "301924d813137793",
+        "g": "839794e7dfaeafcf",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "rid.storage98@gmail.com",
+        "dname": "",
+        "x": 1390,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "0108e39089ffc1c3",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "839794e7dfaeafcf",
+        "name": "email notification",
+        "info": "",
+        "x": 1020,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fe3678fc252d04fb",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "e4c6ec645eb396d4",
+        "name": "Saving as csv file",
+        "info": "",
+        "x": 2000,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "cac196adb4ed426d",
+        "type": "csv",
+        "z": "301924d813137793",
+        "g": "e4c6ec645eb396d4",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "Operator,DateTime,TowerLight,Status",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1970,
+        "y": 1080,
+        "wires": [
+            [
+                "b44710b1888fb05c"
+            ]
+        ]
+    },
+    {
+        "id": "8baa619a6f50545b",
+        "type": "file",
+        "z": "301924d813137793",
+        "g": "e4c6ec645eb396d4",
+        "name": "to csv file",
+        "filename": "C:\\Users\\suhaimi\\Documents\\RID\\Data Generation\\Temp Machine Status Log.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2180,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2a993b819194bdb",
+        "type": "switch",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "property": "payload.Status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 990,
+        "y": 780,
+        "wires": [
+            [
+                "06bc2b123319edfb"
+            ]
+        ]
+    },
+    {
+        "id": "df5635b283f3b3e1",
+        "type": "ui_toast",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Notified",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1450,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb2f89929934201b",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "group": "fa9326ecab2ebb07",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "",
+        "label": "Line Status",
+        "format": "{{msg.payload.Status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1450,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6c6aacec9e6de8b1",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "group": "fa9326ecab2ebb07",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Line STOPPED at",
+        "format": "{{msg.payload.DateTime}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "13c082e7ba4d2418",
+        "type": "change",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "Machine Status",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.Status",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "((SYARIKAT SHRDC) TEMPERATURE TEST MACHINE STOPPED!",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.Status",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "((SYARIKAT SHRDC) TEMPERATURE TEST MACHINE ONLINE.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 660,
+        "wires": [
+            [
+                "bb2f89929934201b"
+            ]
+        ]
+    },
+    {
+        "id": "991716f8df5974d2",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "bf092bf45cf89faa",
+        "name": "",
+        "func": "var TgRedAlert;\nvar onoff = global.get(\"red\"); // get light status from flow\nvar nd = new Date();     // Generate time stamp\nvar dts = nd.toString(); // Parse in string\nvar name = global.get(\"a\"); // get operator name from flow\n\n\nif (onoff == 1){\n    \n    TgRedAlert = {\n        \n    \"chatId\":33130249,\n    \"type\": \"message\",\n    \"content\": \"ALERT! (SYARIKAT SHRDC) TEMPERATURE TEST MACHINE STOPPED! AT \" + dts + \"\\n\\r\" +\n                \"Mr\\Ms. \" + name + \"\\n\\r\" +\n                \"Please attend and take necessary actions urgently! \\n\\r\"+\n                \"Kindly fix it as soon as possible to prevent further downtime.\"\n    }\n} \n\nelse{\n    return null;\n    }   \n\n\n msg.payload = TgRedAlert;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar count = 0;",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 400,
+        "wires": [
+            [
+                "7c8cf334c24327e6"
+            ]
+        ]
+    },
+    {
+        "id": "7c8cf334c24327e6",
+        "type": "telegram sender",
+        "z": "301924d813137793",
+        "g": "bf092bf45cf89faa",
+        "name": "",
+        "bot": "de4deb3d9756cc51",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1609146e147566c4",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "839794e7dfaeafcf",
+        "name": "email to production manager",
+        "func": "var onoff = global.get(\"red\");  // 1 or 0\nvar new_date = new Date(); //generate 13 digit date\nvar dts = new_date.toString(); // convert to readable date\n\nif (onoff == 1){\n    \n    // ---Email Title---\n    msg.topic = \"ALERT! ((SYARIKAT SHRDC) TEMPERATURE TEST MACHINE STOPPED\";\n    \n    // ---Email content---\n    msg.payload = \"The (SYARIKAT SHRDC) TEMPERATURE TEST MACHINE was stopped at (timestamp).\" + \"\\n\\n\\r\" +\n                  \"Please monitor and check if necessary.\"\n                  ;\n}\nelse{\n    return null; // if not using switch node\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 240,
+        "wires": [
+            [
+                "2ee3f70ddddbf5e3"
+            ]
+        ]
+    },
+    {
+        "id": "2ee3f70ddddbf5e3",
+        "type": "e-mail",
+        "z": "301924d813137793",
+        "d": true,
+        "g": "839794e7dfaeafcf",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "nabila@shrdc.org.my",
+        "dname": "",
+        "x": 1380,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6caef5397b21ef52",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "group": "fa9326ecab2ebb07",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Line RESUME at",
+        "format": "{{msg.payload.DateTime}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "95260754dfbb48f7",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "Red TL Dash",
+        "info": "",
+        "x": 1010,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4b3d7c8664568e3b",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "bf092bf45cf89faa",
+        "name": "Tele Notification",
+        "info": "",
+        "x": 1020,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "547283a4849ebbc3",
+        "type": "mqtt in",
+        "z": "301924d813137793",
+        "g": "f6b491decc911f27",
+        "name": "",
+        "topic": "YELLOW TL TEMP. MACHINE",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b9f1f33723b004cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 1220,
+        "wires": [
+            [
+                "9ca2fa6e98d2481d",
+                "92fe7d52a89a468d",
+                "759b965338209337"
+            ]
+        ]
+    },
+    {
+        "id": "551965d72523c38a",
+        "type": "mqtt in",
+        "z": "301924d813137793",
+        "g": "b58ddb4f154b702b",
+        "name": "",
+        "topic": "GREEN TL TEMP. MACHINE",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "b9f1f33723b004cf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 1780,
+        "wires": [
+            [
+                "d97ad6f59b291e89",
+                "d13831ca735b2ef6",
+                "ad463a486d4e48ed"
+            ]
+        ]
+    },
+    {
+        "id": "9ca2fa6e98d2481d",
+        "type": "ui_led",
+        "z": "301924d813137793",
+        "order": 6,
+        "group": "548c93765b10c3f4",
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#ffffff",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "YELLOW TL",
+        "x": 1670,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "d97ad6f59b291e89",
+        "type": "ui_led",
+        "z": "301924d813137793",
+        "order": 6,
+        "group": "a35d36495fe81c99",
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ffffff",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "GREEN TL",
+        "x": 1670,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "d13831ca735b2ef6",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "event timestamp",
+        "func": "var onoff = msg.payload; // 1/0 signal\nvar nd = new Date();     // Generate time stamp\nvar dts = nd.toString(); // Parse in string\nvar TL = \"Yellow Tower Light\" ;\nvar name = global.get(\"a\");\n\nmsg.payload = {\n   Status: onoff,\n    DateTime : dts,\n    TowerLight  : TL,\n    Operator : name\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1820,
+        "wires": [
+            [
+                "1b5186414c466711",
+                "4d5e563f974f7dd8",
+                "a07374685218f414",
+                "2e91f4224cfc27d0",
+                "59363e2228e8f13c"
+            ]
+        ]
+    },
+    {
+        "id": "92fe7d52a89a468d",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "event timestamp",
+        "func": "var onoff = msg.payload; // 1/0 signal\nvar nd = new Date();     // Generate time stamp\nvar dts = nd.toString(); // Parse in string\nvar TL = \"Green Tower Light\" ;\nvar name = global.get(\"a\");\n\nmsg.payload = {\n   Status   : onoff,\n    DateTime : dts,\n    TowerLight  : TL ,\n    Operator : name\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1260,
+        "wires": [
+            [
+                "8848165f335ac18a",
+                "0bc8883422be6cbd",
+                "6b7a749aee8ad1c3",
+                "655f7f3d9d6b0bde",
+                "76f0b465256a9899"
+            ]
+        ]
+    },
+    {
+        "id": "8848165f335ac18a",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "-",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1660,
+        "wires": [
+            [
+                "24cf571743fb0dbd"
+            ]
+        ]
+    },
+    {
+        "id": "1b5186414c466711",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "-",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 2220,
+        "wires": [
+            [
+                "283be48ffcd0311a"
+            ]
+        ]
+    },
+    {
+        "id": "283be48ffcd0311a",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "-",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1610,
+        "y": 2220,
+        "wires": [
+            [
+                "cac196adb4ed426d"
+            ]
+        ]
+    },
+    {
+        "id": "31d3e2d425911726",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "group": "548c93765b10c3f4",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "",
+        "label": "Heater Element Status",
+        "format": "{{msg.payload.Status}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1480,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "7c4fd90e286a1794",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "group": "548c93765b10c3f4",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Heater ON at",
+        "format": "{{msg.payload.DateTime}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1450,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "0bc8883422be6cbd",
+        "type": "change",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "Heater Status",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.Status",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "Heater Element ON",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.Status",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "Heater Element OFF",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1340,
+        "wires": [
+            [
+                "31d3e2d425911726"
+            ]
+        ]
+    },
+    {
+        "id": "204daf756b3489df",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "group": "548c93765b10c3f4",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Heater OFF at",
+        "format": "{{msg.payload.DateTime}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "0c44186447dfd532",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "Yellow TL Dash",
+        "info": "",
+        "x": 1010,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "1d7adb8e52cfb2b8",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "group": "a35d36495fe81c99",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "name": "",
+        "label": "Cooling Fan Status",
+        "format": "{{msg.payload.Status}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "4d449cef16c0f79c",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "group": "a35d36495fe81c99",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Cooling Fan On at",
+        "format": "{{msg.payload.DateTime}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "4d5e563f974f7dd8",
+        "type": "change",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "Cooling Status",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload.Status",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "Cooling Fan is ON",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload.Status",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "Cooling Fan is OFF",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 1900,
+        "wires": [
+            [
+                "1d7adb8e52cfb2b8"
+            ]
+        ]
+    },
+    {
+        "id": "1f21d56054f499fa",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "group": "a35d36495fe81c99",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Cooling Fan Off at",
+        "format": "{{msg.payload.DateTime}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "55c4ad5fb1b0f15f",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "Green  TL Dash",
+        "info": "",
+        "x": 1010,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "eb4161b560088605",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "7f118db8b5466e8f",
+        "name": "Operator",
+        "info": "",
+        "x": 280,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1562996397f9553b",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "f6b491decc911f27",
+        "name": "Yellow Tower Light",
+        "info": "",
+        "x": 290,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "17d9da0ccab24931",
+        "type": "comment",
+        "z": "301924d813137793",
+        "g": "b58ddb4f154b702b",
+        "name": "Green Tower Light",
+        "info": "",
+        "x": 290,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "24cf571743fb0dbd",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "-",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 1660,
+        "wires": [
+            [
+                "cac196adb4ed426d"
+            ]
+        ]
+    },
+    {
+        "id": "7c76e8262aee569b",
+        "type": "switch",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "Machine Time",
+        "property": "payload.Status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1020,
+        "y": 720,
+        "wires": [
+            [
+                "6c6aacec9e6de8b1"
+            ],
+            [
+                "6caef5397b21ef52"
+            ]
+        ]
+    },
+    {
+        "id": "6b7a749aee8ad1c3",
+        "type": "switch",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "Heater Time",
+        "property": "payload.Status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1010,
+        "y": 1380,
+        "wires": [
+            [
+                "7c4fd90e286a1794"
+            ],
+            [
+                "204daf756b3489df"
+            ]
+        ]
+    },
+    {
+        "id": "a07374685218f414",
+        "type": "switch",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "Fan Time",
+        "property": "payload.Status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1000,
+        "y": 1940,
+        "wires": [
+            [
+                "4d449cef16c0f79c"
+            ],
+            [
+                "1f21d56054f499fa"
+            ]
+        ]
+    },
+    {
+        "id": "06bc2b123319edfb",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "func": "var onoff = msg.payload.Status\nvar nd = new Date();     // Generate time stamp\nvar dts = nd.toString(); // Parse in string\nvar popup\n\nif (onoff == 1){\n    \n    popup = \"((SYARIKAT SHRDC) TEMPERATURE TEST MACHINE STOPPED! at\" +\n            \"\\n\\r\" + dts\n    \n    }\n \n\nelse{\n    return null;\n    }   \n\nmsg.payload = popup;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 780,
+        "wires": [
+            [
+                "df5635b283f3b3e1"
+            ]
+        ]
+    },
+    {
+        "id": "b62be88232b49c21",
+        "type": "ui_dropdown",
+        "z": "301924d813137793",
+        "g": "7f118db8b5466e8f",
+        "name": "",
+        "label": "NAME (OPERATOR)",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "f09b3eb508ab3059",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Ridhuan",
+                "value": "Ridhuan",
+                "type": "str"
+            },
+            {
+                "label": "Saufi",
+                "value": "Saufi",
+                "type": "str"
+            },
+            {
+                "label": "Firdaus",
+                "value": "Firdaus",
+                "type": "str"
+            },
+            {
+                "label": "Nabila",
+                "value": "Nabila",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "58b151ae80bb52c1"
+            ]
+        ]
+    },
+    {
+        "id": "58b151ae80bb52c1",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "global.set a",
+        "func": "global.set(\"a\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "991716f8df5974d2",
+                "fe0a6ad5737ca491"
+            ]
+        ]
+    },
+    {
+        "id": "87b7092c10b374b9",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "global.set red",
+        "func": "global.set(\"red\",msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "991716f8df5974d2",
+                "fe0a6ad5737ca491",
+                "1609146e147566c4"
+            ]
+        ]
+    },
+    {
+        "id": "da8de5822b8033d8",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "group": "fa9326ecab2ebb07",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Red TL ON for",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "4268e1b9097bdfbe",
+        "type": "interval-length",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "format": "human",
+        "bytopic": true,
+        "minimum": "",
+        "maximum": "",
+        "window": "",
+        "timeout": false,
+        "msgTimeout": "",
+        "minimumunit": "msecs",
+        "maximumunit": "msecs",
+        "windowunit": "msecs",
+        "msgTimeoutUnit": "msecs",
+        "reset": true,
+        "startup": true,
+        "msgField": "payload",
+        "timestampField": "timestamp",
+        "repeatTimeout": false,
+        "name": "",
+        "x": 1020,
+        "y": 860,
+        "wires": [
+            [
+                "f48242f7d4b2594b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f48242f7d4b2594b",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "func": "var interval;\nvar onoff = global.get(\"red\"); // get light status from flow\n\nif (onoff == 0){\n    \n    interval = msg.payload\n} \n\nelse{\n    return null;\n    }   \n\n\n msg.payload = interval;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 860,
+        "wires": [
+            [
+                "da8de5822b8033d8"
+            ]
+        ]
+    },
+    {
+        "id": "655f7f3d9d6b0bde",
+        "type": "interval-length",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "format": "human",
+        "bytopic": true,
+        "minimum": "",
+        "maximum": "",
+        "window": "",
+        "timeout": false,
+        "msgTimeout": "",
+        "minimumunit": "msecs",
+        "maximumunit": "msecs",
+        "windowunit": "msecs",
+        "msgTimeoutUnit": "msecs",
+        "reset": true,
+        "startup": true,
+        "msgField": "payload",
+        "timestampField": "timestamp",
+        "repeatTimeout": false,
+        "name": "",
+        "x": 1040,
+        "y": 1440,
+        "wires": [
+            [
+                "760f636c8ded7d0d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "760f636c8ded7d0d",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "",
+        "func": "var interval;\nvar onoff = global.get(\"yellow\"); // get light status from flow\n\nif (onoff == 0){\n    \n    interval = msg.payload\n} \n\nelse{\n    return null;\n    }   \n\n\n msg.payload = interval;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 1480,
+        "wires": [
+            [
+                "0a654e48294f11e9"
+            ]
+        ]
+    },
+    {
+        "id": "0a654e48294f11e9",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "group": "548c93765b10c3f4",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Yellow TL ON for",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1470,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "759b965338209337",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "global.set yellow",
+        "func": "global.set(\"yellow\",msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e91f4224cfc27d0",
+        "type": "interval-length",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "format": "human",
+        "bytopic": true,
+        "minimum": "",
+        "maximum": "",
+        "window": "",
+        "timeout": false,
+        "msgTimeout": "",
+        "minimumunit": "msecs",
+        "maximumunit": "msecs",
+        "windowunit": "msecs",
+        "msgTimeoutUnit": "msecs",
+        "reset": true,
+        "startup": true,
+        "msgField": "payload",
+        "timestampField": "timestamp",
+        "repeatTimeout": false,
+        "name": "",
+        "x": 1020,
+        "y": 2000,
+        "wires": [
+            [
+                "73e936d7b4dd1663"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "73e936d7b4dd1663",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "",
+        "func": "var interval;\nvar onoff = global.get(\"green\"); // get light status from flow\n\nif (onoff == 0){\n    \n    interval = msg.payload\n} \n\nelse{\n    return null;\n    }   \n\n\n msg.payload = interval;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 2040,
+        "wires": [
+            [
+                "45c0c71a8363e571"
+            ]
+        ]
+    },
+    {
+        "id": "45c0c71a8363e571",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "group": "a35d36495fe81c99",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Green TL ON for",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1460,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "ad463a486d4e48ed",
+        "type": "function",
+        "z": "301924d813137793",
+        "name": "global.set green",
+        "func": "global.set(\"green\",msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b44710b1888fb05c",
+        "type": "file",
+        "z": "301924d813137793",
+        "g": "e4c6ec645eb396d4",
+        "name": "to csv file",
+        "filename": "C:\\Users\\suhaimi\\Documents\\RID\\Data Generation\\Tower Light Status Log.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2180,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "372e247188769793",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "func": "var count = global.get(\"count_red\");\nvar onoff = msg.payload.Status; // get light status from flow\n\nif (onoff == 1){\n   \n    count=count+1;\n    global.set(\"count_red\",count)\n}\n\nelse {\n    return null;\n}\n\n\nmsg.payload = global.get(\"count_red\");\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 940,
+        "wires": [
+            [
+                "04f38947588de664"
+            ]
+        ]
+    },
+    {
+        "id": "04f38947588de664",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "group": "fa9326ecab2ebb07",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Counted Tower Light ON",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1500,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "76f0b465256a9899",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "",
+        "func": "var count = global.get(\"count_yellow\");\nvar onoff = msg.payload.Status; // get light status from flow\n\nif (onoff == 1){\n   \n    count=count+1;\n    global.set(\"count_yellow\",count)\n}\n\nelse {\n    return null;\n}\n\n\nmsg.payload = global.get(\"count_yellow\");\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 1540,
+        "wires": [
+            [
+                "27f7633ecac01096"
+            ]
+        ]
+    },
+    {
+        "id": "27f7633ecac01096",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "group": "548c93765b10c3f4",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Counted Tower Light ON",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1490,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "59363e2228e8f13c",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "",
+        "func": "var count = global.get(\"count_green\");\nvar onoff = msg.payload.Status; // get light status from flow\n\nif (onoff == 1){\n   \n    count=count+1;\n    global.set(\"count_green\",count)\n}\n\nelse {\n    return null;\n}\n\n\nmsg.payload = global.get(\"count_green\");\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 2080,
+        "wires": [
+            [
+                "0a91fd8d5d6ea8d3"
+            ]
+        ]
+    },
+    {
+        "id": "0a91fd8d5d6ea8d3",
+        "type": "ui_text",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "group": "a35d36495fe81c99",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Counted Tower Light ON",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1450,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "5b389245c550dfce",
+        "type": "inject",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 1110,
+        "y": 980,
+        "wires": [
+            [
+                "0881021747333e3d"
+            ]
+        ]
+    },
+    {
+        "id": "0881021747333e3d",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "f4b07e40a897d4c3",
+        "name": "",
+        "func": "global.set(\"count_red\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 980,
+        "wires": [
+            [
+                "04f38947588de664"
+            ]
+        ]
+    },
+    {
+        "id": "bfb21c4af620e466",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "",
+        "func": "global.set(\"count_yellow\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 1580,
+        "wires": [
+            [
+                "27f7633ecac01096"
+            ]
+        ]
+    },
+    {
+        "id": "e5799f998458ebb2",
+        "type": "function",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "",
+        "func": "global.set(\"count_green\",msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 2120,
+        "wires": [
+            [
+                "0a91fd8d5d6ea8d3"
+            ]
+        ]
+    },
+    {
+        "id": "0cc6fe4467718eee",
+        "type": "inject",
+        "z": "301924d813137793",
+        "g": "d0e6b874e0f8a024",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 1150,
+        "y": 1580,
+        "wires": [
+            [
+                "bfb21c4af620e466"
+            ]
+        ]
+    },
+    {
+        "id": "1fbc33a86294dc12",
+        "type": "inject",
+        "z": "301924d813137793",
+        "g": "edba4f3c8ddaae1d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 1110,
+        "y": 2120,
+        "wires": [
+            [
+                "e5799f998458ebb2"
+            ]
+        ]
+    },
+    {
+        "id": "536de77e32b7c27a",
+        "type": "ui_spacer",
+        "z": "301924d813137793",
+        "name": "spacer",
+        "group": "fa9326ecab2ebb07",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e3e1f5e362d0f63f",
+        "type": "ui_spacer",
+        "z": "301924d813137793",
+        "name": "spacer",
+        "group": "548c93765b10c3f4",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c0ac2a2dd427818c",
+        "type": "ui_spacer",
+        "z": "301924d813137793",
+        "name": "spacer",
+        "group": "a35d36495fe81c99",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8e2ea08b1e59b5fa",
+        "type": "ui_spacer",
+        "z": "301924d813137793",
+        "name": "spacer",
+        "group": "a35d36495fe81c99",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a7e9b5f8c2cb78b2",
+        "type": "ui_spacer",
+        "z": "301924d813137793",
+        "name": "spacer",
+        "group": "548c93765b10c3f4",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b4c1ab2f2f558895",
+        "type": "ui_spacer",
+        "z": "301924d813137793",
+        "name": "spacer",
+        "group": "fa9326ecab2ebb07",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b9f1f33723b004cf",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.4.219",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fa9326ecab2ebb07",
+        "type": "ui_group",
+        "name": "MACHINE STATUS",
+        "tab": "f36720248c889c66",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de4deb3d9756cc51",
+        "type": "telegram bot",
+        "botname": "rid_tower_light_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "548c93765b10c3f4",
+        "type": "ui_group",
+        "name": "HEATER SYSTEM",
+        "tab": "f36720248c889c66",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a35d36495fe81c99",
+        "type": "ui_group",
+        "name": "COOLING SYSTEM",
+        "tab": "f36720248c889c66",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    }
+]
